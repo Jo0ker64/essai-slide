@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./slyle.css">
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="splide" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading">Splide Basic HTML Example</h2>
+      
+        <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="./image/banniere_movie.jpg"></li>
+                <li class="splide__slide"><img src="./image/banniere_movie.jpg"></li>
+                <li class="splide__slide"><img src="./image/banniere_movie.jpg"></li>
+                <li class="splide__slide"><img src="./image/banniere_movie.jpg"></li>
+                <li class="splide__slide"><img src="./image/banniere_movie.jpg"></li>
+                <li class="splide__slide"><img src="./image/banniere_movie.jpg"></li>
+                <li class="splide__slide"><img src="./image/banniere_movie.jpg"></li>
+              </ul>
+        </div>
+      </section>
+
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+
+
+
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide' , {
+            with: '100%' , 
+            start: 3, 
+            // demarrer le slide à l'image voulu zéro étant l'image 1
+            perPage: 1, 
+            // nombre d'image par slide
+            gap: '10px', 
+            // permet de mettre un espace entre les images si plusieurs sur le meme slide
+            focus: 'center', 
+            type:'loop',
+            snap: true, 
+            // permet de mettre le slide en infini
+            // autoplay: true,
+            // // permet de lire les slide sans cliquer
+            // interval: 3000
+            // // durée entre chaque slide compte en milliseconde donc 1000 = 1 sec
+          });
+          splide.mount();
+        } );
+      </script>
+
+
+
+
+</body>
+</html>
